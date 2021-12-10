@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Input your favourite month</h2>
+        <input type="text" id="ajax" list="json-datalist" placeholder="Write in ukrainian"v-on:keyup.enter='congratUser(msg)' v-model.trim="msg">
+        <template >
+            <datalist id="json-datalist" class="datalist">
+            </datalist>
+        </template>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
